@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+
+    android:weightSum="1"
+    android:baselineAligned="false"
+    android:id="@+id/laout">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/logo_hc"
+        android:adjustViewBounds="true"
+        android:paddingBottom="50dp" />
+
+    <EditText android:id="@+id/edit_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_message"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="#31020210"
+        android:textColor="#FFC7C7C7"
+        />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:gravity="center"
+        android:id="@+id/editText"
+        android:layout_alignBottom="@+id/scrollView"
+        android:layout_alignLeft="@+id/edit_message"
+        android:layout_alignStart="@+id/edit_message"
+        android:layout_alignRight="@+id/edit_message"
+        android:layout_alignEnd="@+id/edit_message"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="#31020210"
+        android:shadowColor="#ff5a5a5a"
+        android:textColorLink="#ff5d5d5d"
+        android:textColor="#ffc7c7c7" />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_send"
+            android:id="@+id/buttonSingIn"
+            android:layout_below="@+id/scrollView"
+            android:layout_alignRight="@+id/editText"
+            android:layout_alignEnd="@+id/editText"
+
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="#3a85c8" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

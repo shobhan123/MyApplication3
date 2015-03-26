@@ -1,0 +1,163 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity2Activity"
+    android:background="#F9F9F9">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/logo_head"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sub Speciality"
+        android:id="@+id/button4"
+        android:textColor="#ff060606"
+        android:background="#ffe1e1e1"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Speciality"
+        android:id="@+id/button3"
+        android:background="#ffe1e1e1"
+        android:textColor="#ff060606"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Channel"
+        android:id="@+id/btnChannelOne"
+        android:textColor="#ff060606"
+        android:background="#ffe1e1e1"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/button5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:id="@+id/button5"
+        android:textColor="#ff060606"
+        android:background="#ffe1e1e1"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:id="@+id/gridLayout"
+        android:layout_gravity="center"
+        android:layout_below="@+id/btnChannelOne"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS"
+            android:id="@+id/checkBox2"
+            android:checked="false"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:textColor="#ff000000"
+            android:buttonTint="#333"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:id="@+id/checkBox3"
+            android:checked="false"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:textColor="#ff000000"
+            android:buttonTint="#333" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google Ads"
+            android:id="@+id/checkBox6"
+            android:checked="false"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:textColor="#ff000000"
+            android:buttonTint="#333"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Practo"
+            android:id="@+id/checkBox5"
+            android:checked="false"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:textColor="#FF000000"
+            android:buttonTint="#333"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doc Suggest"
+            android:id="@+id/checkBox12"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:textColor="#FF000000"
+            android:buttonTint="#333"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Just Dial"
+            android:id="@+id/checkBox4"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:checked="false"
+            android:textColor="#FF000000"
+            android:buttonTint="#333"/>
+
+
+    </GridLayout>
+
+</RelativeLayout>
